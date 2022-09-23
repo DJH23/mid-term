@@ -1,0 +1,152 @@
+/* Global CSS Classes and selectors */
+html,
+body,
+.container {
+  height: 100%;
+  margin: 0 auto;
+  background-color: #F4F6FC;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-auto-columns: 1fr;
+  grid-auto-rows: 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: column;
+  grid-template-areas:
+    "Banner Banner Banner"
+    "hero-section hero-section hero-section"
+    "Logos Logos Logos"
+    "Recent-Projects Recent-Projects Recent-Projects"
+    "What-our-clients-have-to-say What-our-clients-have-to-say What-our-clients-have-to-say"
+    "Our-Services Our-Services Our-Services"
+    "Do-you-have-any-questions Do-you-have-any-questions Do-you-have-any-questions"
+    "Footer Footer Footer";
+}
+
+
+.Banner {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    ". . ."
+    "Circle-logo Home-Projects-Services Contact-us"
+    ". . .";
+  grid-area: Banner;
+}
+
+.Circle-logo {
+  grid-area: Circle-logo;
+}
+
+.Home-Projects-Services {
+  grid-area: Home-Projects-Services;
+}
+
+.Contact-us {
+  grid-area: Contact-us;
+}
+
+.hero-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-area: hero-section;
+  align-items: center;
+} 
+
+.Logos {
+  grid-area: Logos;
+}
+
+.Recent-Projects {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: column;
+  grid-template-areas:
+    ". . ."
+    "Simplify Dashcoin Vectorify"
+    ". . .";
+  grid-area: Recent-Projects;
+}
+
+.Simplify {
+  grid-area: Simplify;
+}
+
+.Dashcoin {
+  grid-area: Dashcoin;
+}
+
+.Vectorify {
+  grid-area: Vectorify;
+}
+
+.What-our-clients-have-to-say {
+  
+  grid-area: What-our-clients-have-to-say;
+}
+
+.Our-Services {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    ". . ."
+    "User-interface-design User-experience-design App-development"
+    ". . .";
+  grid-area: Our-Services;
+  justify-items: center;
+}
+
+.User-interface-design {
+  grid-area: User-interface-design;
+}
+
+.User-experience-design {
+  grid-area: User-experience-design;
+}
+
+.App-development {
+  grid-area: App-development;
+}
+
+.Do-you-have-any-questions {
+  grid-area: Do-you-have-any-questions;
+}
+
+.Footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1.2fr 0.9fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "Cirlce-logo-and-address . Team-services-about"
+    "Cirlce-logo-and-address . Press-projects-privacy-policy";
+  grid-area: Footer;
+  align-items: center;
+}
+
+.Cirlce-logo-and-address {
+  grid-area: Circle-logo-and-address;
+}
+
+.Team-services-about {
+  grid-area: Team-services-about;
+}
+
+.Press-projects-privacy-policy {
+  grid-area: Press-projects-privacy-policy;
+}
